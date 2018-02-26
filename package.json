@@ -10,7 +10,7 @@
     "serve": "browser-sync start --server ./public/ --port 3000 --files \"./public/**/*.html,./public/assets/css/index.css,./public/assets/js/bundle.js\"",
     "nodesass": "node-sass ./src/scss/index.scss ./public/assets/css/index.css -w",
     "build:css": "npm-run-all -s nodesass postcss",
-    "css": "node-sass-watcher ./src/scss/index.scss -o ./public/assets/css/index.css -c 'node-sass <input> | postcss -u autoprefixer'",
+    "css": "node-sass-watcher ./src/scss/index.scss -o ./public/assets/css/index.css -c \"node-sass <input> | postcss -u autoprefixer\"",
     "watchify": "watchify ./src/js/main.js -o ./public/assets/js/bundle.js -v wait;"
   },
   "browserify": {

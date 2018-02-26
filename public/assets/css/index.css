@@ -353,12 +353,10 @@ blockquote:before {
 /*parts*/
 /*elements*/
 header {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 h1 {
   font-size: 15px; }
